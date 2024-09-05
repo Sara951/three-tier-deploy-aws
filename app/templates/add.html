@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Item</title>
+</head>
+<body>
+    <h1>Add a New Item</h1>
+    <form method="post">
+        <label for="item">Item:</label>
+        <input type="text" id="item" name="item">
+        <input type="submit" value="Add">
+    </form>
+    <a href="{{ url_for('main.index') }}">Back to items</a>
+</body>
+</html>

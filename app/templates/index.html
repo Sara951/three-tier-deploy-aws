@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Items</h1>
+    <ul>
+    {% for item in items %}
+        <li>{{ item.item }}</li>
+    {% endfor %}
+    </ul>
+    <a href="{{ url_for('main.add') }}">Add a new item</a>
+</body>
+</html>
